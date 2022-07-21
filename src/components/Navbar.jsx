@@ -12,34 +12,36 @@ export const Navbar = () => {
 
   return (
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
-        <h1 className='w-full text-3xl font-bold text-[#00df9a]'>Bambi<span className='text-white'>Data</span></h1>
+            
+            <div className='hidden md:fixed md:flex md:items-center md:justify-between md:w-full md:left-0 md:px-5 md:z-30 md:backdrop-blur-xl md:top-0'>
+                <h1 className=' w-full text-3xl font-bold text-[#00df9a] z-20'>Bambi<span className='text-white'>Data</span></h1>  
+                <ul className='hidden md:flex font-semibold z-20'>
+                    <li className='p-4'>Home</li>
+                    <li className='p-4'>Compania</li>
+                    <li className='p-4'>Recursos</li>
+                    <li className='p-4'>Nosotros</li>
+                    <li className='p-4'>Contacto</li>
+                </ul>
+            </div>
+
+            <div className='md:hidden backdrop-blur-xl top-0 py-5 flex items-center justify-between fixed w-full z-50 left-0 px-5'>
+                <h1 className='md:hidden sm:flex w-full text-3xl font-bold text-[#00df9a] z-20'>Bambi<span className='text-white'>Data</span></h1>
+                <div onClick={handleNav} className='md:hidden z-50'>
+                    {!nav ? <AiOutlineMenu size={20}/> : <AiOutlineClose size={20}/>}
+                </div>
+            </div>
         
-        <ul className='hidden md:flex font-semibold'>
-            <li className='p-4'>Home</li>
-            <li className='p-4'>Compania</li>
-            <li className='p-4'>Recursos</li>
-            <li className='p-4'>Nosotros</li>
-            <li className='p-4'>Conpmntacto</li>
-        </ul>
-
-
-        <div onClick={handleNav} className='block md:hidden'>
-            {!nav ? <AiOutlineMenu size={20}/> : <AiOutlineClose size={20}/>}
-        </div>
-
-        <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full backdrop-blur-xl border-r border-r-gray-600 duration-500 ' : 'fixed left-[-100%] top-0 h-full w-[60%] duration-500 '}>
-
-            <h1 className='w-full text-3xl font-bold text-[#00df9a] mx-4 my-[30px]'>Bambi<span className='text-white'>Data</span></h1>
-
-            <ul className='p-4 font-semibold'>
-                <li className='p-4 border-b border-gray-600'>Home</li>
-                <li className='p-4 border-b border-gray-600'>Compania</li>
-                <li className='p-4 border-b border-gray-600'>Recursos</li>
-                <li className='p-4 border-b border-gray-600'>Nosotros</li>
-                <li className='p-4'>Contacto</li>
+        <div className={nav ? 'fixed z-10 top-0 left-0 w-[100%] h-full bg-slate-900 bg-opacity-70 backdrop-blur-xl border-r border-r-gray-600 duration-500 ' : 'fixed top-[-100%] h-full left-0 w-[100%] duration-500 z-10 '}>
+            
+            <ul className='p-4 font-semibold text-center mt-20'>
+                <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Home</li>
+                <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Compania</li>
+                <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Recursos</li>
+                <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Nosotros</li>
+                <li className='p-5'>Contacto</li>
             </ul>
 
-            <div className='flex flex-col h-[45%] justify-end'>
+            <div className='md:hidden flex flex-col h-[10%] justify-end'>
                 <ul className='flex justify-center items-center py-3'>
                     <li className='px-4 hover:text-orange-500 cursor-pointer'><AiFillInstagram size={20}/></li>
                     <li><FaGripLinesVertical/></li>
