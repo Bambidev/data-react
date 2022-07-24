@@ -24,14 +24,14 @@ export const Navbar = () => {
                 </ul>
             </div>
 
-            <div className='md:hidden backdrop-blur-xl top-0 py-5 flex items-center justify-between fixed w-full z-50 left-0 px-5'>
+            <div className='md:hidden bg-black bg-opacity-60 backdrop-blur-xl top-0 py-5 flex items-center justify-between fixed w-full z-50 left-0 px-5 '>
                 <h1 className='md:hidden sm:flex w-full text-3xl font-bold text-[#00df9a] z-20'>Bambi<span className='text-white'>Data</span></h1>
                 <div onClick={handleNav} className='md:hidden z-50'>
                     {!nav ? <AiOutlineMenu size={20}/> : <AiOutlineClose size={20}/>}
                 </div>
             </div>
         
-        <div className={nav ? 'fixed z-10 top-0 left-0 w-[100%] h-full bg-slate-900 bg-opacity-70 backdrop-blur-xl border-r border-r-gray-600 duration-500 ' : 'fixed top-[-100%] h-full left-0 w-[100%] duration-500 z-10 '}>
+        <div className={nav ? 'fixed z-10 top-0 left-0 w-[100%] h-full bg-black bg-opacity-80 backdrop-blur-xl border-r border-r-gray-600 duration-500 ' : 'fixed top-[-100%] h-full left-0 w-[100%] duration-500 z-10 '}>
             
             <ul className='p-4 font-semibold text-center mt-20'>
                 <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Home</li>

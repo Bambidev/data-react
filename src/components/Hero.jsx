@@ -7,7 +7,7 @@ import planet from '../img/planet.jpg'
 
 export const Hero = () => {
   return (
-    <div className='text-white'>
+    <div className='text-white '>
       <Parallax bgImage={planet} strength={800}>
         <div className='max-w-[800px] mx-auto text-center w-full h-[89vh] flex flex-col justify-center'>
 
@@ -31,9 +31,9 @@ export const Hero = () => {
 
             </div>
 
-            <p className='md:text-2xl text-xl font-bold text-gray-600 '>Supervise sus análisis de datos para aumentar los ingresos de las plataformas BTB, BTC, & SASS.</p>
+            <p className='md:text-2xl text-xl font-bold text-gray-600 px-2'>Supervise sus análisis de datos para aumentar los ingresos de las plataformas BTB, BTC, & SASS.</p>
 
-            <button className='bg-[#00df9a] w-[200px] rounded-md my-6 mx-auto py-3 text-black font-bold  '>Empezar</button>
+            <button className='shadow-xl hover:shadow-[#00dbdf4d] bg-[#00df9a] transition-all ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:text-white w-[200px] rounded-md my-7 mx-auto py-3 text-black font-bold  '>Empezar</button>
         </div>
         </Parallax>
     </div>
