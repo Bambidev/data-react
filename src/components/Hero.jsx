@@ -8,7 +8,7 @@ import planet from '../img/planet.jpg'
 export const Hero = () => {
   return (
     <div className='text-white '>
-      <Parallax bgImage={planet} strength={800}>
+      <Parallax className='image' bgImage={planet} strength={400}>
         <div className='max-w-[800px] mx-auto text-center w-full h-[89vh] flex flex-col justify-center'>
 
             <p className='md:p-0 uppercase font-bold text-[#00df9a] p-1'>crecer con análisis de datos</p>
