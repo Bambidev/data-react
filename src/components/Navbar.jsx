@@ -11,9 +11,9 @@ export const Navbar = () => {
     }
 
   return (
-    <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
+    <div className='flex justify-between items-center  max-w-[1240px] mx-auto px-4 text-white'>
             
-            <div className='hidden md:fixed md:flex md:items-center md:justify-between md:w-full md:left-0 md:px-5 md:z-30 md:backdrop-blur-xl md:top-0'>
+            <div className='hidden md:fixed md:flex md:items-center md:justify-between md:w-full md:left-0 md:px-5 md:z-30 md:backdrop-blur-xl md:top-0 bg-black bg-opacity-40'>
                 <h1 className=' w-full text-3xl font-bold text-[#00df9a] z-20'>Bambi<span className='text-white'>Data</span></h1>  
                 <ul className='hidden md:flex font-semibold z-20'>
                     <li className='p-4'>Home</li>
@@ -31,14 +31,14 @@ export const Navbar = () => {
                 </div>
             </div>
         
-        <div className={nav ? 'fixed z-10 top-0 left-0 w-[100%] h-full bg-black bg-opacity-80 backdrop-blur-xl border-r border-r-gray-600 duration-500 ' : 'fixed top-[-100%] h-full left-0 w-[100%] duration-500 z-10 '}>
+        <div className={nav ? 'fixed z-10 top-0 left-0 w-[100%] h-full bg-black bg-opacity-80 backdrop-blur-xl border-r border-r-gray-600 duration-500 ' : 'fixed top-[-200%] h-full left-0 w-[100%] duration-500 z-10 '}>
             
-            <ul className='p-4 font-semibold text-center mt-20'>
-                <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Home</li>
-                <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Compania</li>
-                <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Recursos</li>
-                <li className='p-5 border-b w-1/2 mx-auto border-gray-600'>Nosotros</li>
-                <li className='p-5'>Contacto</li>
+            <ul className='p-4 font-semibold text-center mt-28'>
+                <li className='p-5 mb-5 border-b w-1/2 mx-auto border-gray-600 text-2xl font-normal'>Home</li>
+                <li className='p-5 mb-5 border-b w-1/2 mx-auto border-gray-600 text-2xl font-normal'>Compania</li>
+                <li className='p-5 mb-5 border-b w-1/2 mx-auto border-gray-600 text-2xl font-normal'>Recursos</li>
+                <li className='p-5 mb-5 border-b w-1/2 mx-auto border-gray-600 text-2xl font-normal'>Nosotros</li>
+                <li className='p-5 mb-5 border-b w-1/2 mx-auto border-gray-600 text-2xl font-normal'>Contacto</li>
             </ul>
 
             <div className='md:hidden flex flex-col h-[10%] justify-end'>

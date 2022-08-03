@@ -9,7 +9,7 @@ export const Hero = () => {
   return (
     <div className='text-white '>
       <Parallax className='image' bgImage={planet} strength={800}> 
-        <div className='max-w-[800px] mx-auto text-center w-full h-[90vh] flex flex-col justify-center'>
+        <div className='max-w-[800px] mx-auto text-center w-full h-[100vh] flex flex-col justify-center'>
 
             <p className='md:p-0 uppercase font-bold text-[#00df9a] p-1'>crecer con análisis de datos</p>
             <h1 className='md:text-6xl sm:text-6xl text-4xl font-bold md:py-3'>Crecer con datos</h1>

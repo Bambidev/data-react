@@ -16,7 +16,7 @@ const Newsletter = () => {
 
             <div className="">
 
-                <div className="mt-10 md:mt-0 my-3 flex md:flex-row flex-col md:justify-between gap-2 mt-5 lg:mt-0">
+                <div className="mt-10 md:mt-0 my-3 flex md:flex-row flex-col md:justify-between gap-2 lg:mt-0">
                     <input className='w-[90%] mx-auto md:mx-0 md:w-2/3 px-4 rounded-xl text-[#16656b] font-bold py-3' type="email" 
                     placeholder='Introduzca su email'/>
                     <button className='shadow-xl hover:shadow-[#00dbdf4d] bg-[#00df9a] transition-all ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 hover:text-white  rounded-xl text-black font-bold py-3 px-4 md:w-1/3 w-1/2 mx-auto md:mx-0'>Notificarme</button>
